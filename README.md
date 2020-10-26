@@ -1,4 +1,11 @@
-
+## Descrição
+Avisar sabesp e prefeitura que faltou agua. 
+O sistema permite que o usuario avise a sabesp, dando local e hora
+o Sistema abre ordem de serviço e avisa prefeitura para acompanhamento
+O funcionário efetua o serviço e avisa o sistema
+Sistema avisa usuário que serviço foi efetuado.
+Sistema avisa prefeitura que serviço foi efetuado. 
+Prefeitura pergunta se usuario esta satisfeito.
 
 ## Links úteis
 
