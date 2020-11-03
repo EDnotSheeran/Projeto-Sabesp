@@ -6,7 +6,7 @@
     <title>Cadastro de usuários</title>
 </head>
 <body>
-    <h1>Página de cadastro de usuários</h1>
+    <h1 class="form-title">Página de cadastro de usuários</h1>
 
     <form action="{{ url('users') }}" method="POST">
 

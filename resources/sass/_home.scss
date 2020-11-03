@@ -1,0 +1,270 @@
+body#Home {
+    background: #2A9DF4;
+    
+    @keyframes spin {
+        100% {
+            rotate: 360deg;
+        }
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: calc(100% - 83px);
+        div#carrossel {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            #seletor {
+                margin-top: 10px;
+                button {
+                    width: 15px;
+                    height: 15px;
+                    border: none;
+                    border-radius: 50%;
+                    background-color: #D4d4d4;
+                    cursor: pointer;
+                    margin: 0 2.5px;
+                    &.active{
+                        background-color: #ffffff;
+                    }
+                }
+            }
+
+            div.carrossel-item {
+                border-radius: 10px;
+                background-color: rgba($color: #fff, $alpha: 0.1);
+                width: 80%;
+                height: 80%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &.hidden{
+                    display: none;
+                }   
+
+                div.reserva {
+                    width: 90%;
+                    height: 90%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    flex-direction: column;
+                    p {
+                        margin: 1rem;
+                        color: white;
+                    }
+                    p.fonte-extra {font-size: 90px;}
+                    p.fonte-grande {font-size: 72px;}
+                    p.fonte-media {font-size: 32px;}
+                    p.fonte-pequena {font-size: 24px;}
+                    ul {
+                        display: flex;
+                        width: 100%;
+                        justify-content: space-evenly;
+                    }
+                }
+            }
+        }
+    }
+    div.conteudo-wrapper {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        #conteudo {
+            width: 80%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            // justify-content: space-between;
+            div {
+                h1 {
+                    font-size: 62px;
+                    font-weight: 100;
+                    color: white;
+                    text-align: center;
+                }
+                div {
+                    margin-top: 20px;
+                    h2{
+                        font-size: 30px;
+                        font-weight: 100;
+                        color: white;
+                        text-align: center;
+                        margin: 15px 0;
+                    }
+                    a {
+                        font-size: 25px;
+                        color: #E1AA12;
+                        &:hover {
+                            color: #a57c0b;
+                        }
+                    }
+                }
+            }
+            img {
+                width: 100%;
+                max-width: 500px;
+                margin: 0 auto;
+            }
+        }
+        
+    }
+} 
+
+
+
+/* Nootebook */
+@media only screen and (max-width: 1400px) {
+    [class*=btn] {
+        border-radius: 50px;
+        padding: .7rem 2.5rem;
+    }
+    body#Home {
+        background: #2A9DF4;
+        main {
+            display: flex;
+            flex-direction: column;
+            height: calc(100% - 83px);
+            div#carrossel {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                div.carrossel-item {
+                    border-radius: 10px;
+                    background-color: rgba($color: #fff, $alpha: 0.1);
+                    width: 100%;
+                    height: 100%;
+                    margin: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+    
+                    div.reserva {
+                        padding: 10px;
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        flex-direction: column;
+                        p {
+                            margin: 1rem;
+                            color: white;
+                        }
+                        p.fonte-extra {font-size: 42px;}
+                        p.fonte-grande {font-size: 38px;}
+                        p.fonte-media {font-size: 24px;}
+                        p.fonte-pequena {font-size: 18px;}
+                        ul {
+                            display: flex;
+                            width: 100%;
+                            justify-content: space-evenly;
+                        }
+                    }
+                }
+            }
+        }
+        div.conteudo-wrapper {
+            order: - 1;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0 40px;
+            #conteudo {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                // justify-content: space-between;
+                div {
+                    h1 {
+                        font-size: 42px;
+                        font-weight: 100;
+                        color: white;
+                        text-align: center;
+                    }
+                    div {
+                        margin-top: 10px;
+                        h2{
+                            font-size: 25px;
+                            font-weight: 100;
+                            color: white;
+                            text-align: center;
+                            margin: 15px 0;
+                        }
+                        a {
+                            font-size: 25px;
+                            color: #E1AA12;
+                            &:hover {
+                                color: #a57c0b;
+                            }
+                        }
+                    }
+                }
+                img {
+                    width: 100%;
+                    max-width: 300px;
+                    margin: 0 auto;
+                }
+            }
+            
+        }
+    } 
+}
+
+/* Celular / Tablet */
+@media only screen and (max-width: 900px) {
+    div.conteudo-wrapper {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        #conteudo {
+            width: 80%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            // justify-content: space-between;
+            div {
+                h1 {
+                    font-size: 62px;
+                    font-weight: 100;
+                    color: white;
+                    text-align: center;
+                }
+                div {
+                    margin-top: 20px;
+                    h2{
+                        font-size: 30px;
+                        font-weight: 100;
+                        color: white;
+                        text-align: center;
+                        margin: 15px 0;
+                    }
+                    a {
+                        font-size: 25px;
+                        color: #E1AA12;
+                        &:hover {
+                            color: #a57c0b;
+                        }
+                    }
+                }
+            }
+            img {
+                width: 100%;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+        }
+    }
+}

@@ -1,1 +1,196 @@
-//
+// Google-Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// Variables
+@import './variables.scss';
+
+// Pages
+@import './_home';
+@import './_report';
+
+// Components
+@import './components/loader';
+@import './components//button';
+@import './components//navbar';
+
+// Global Reset
+* {
+  font-size: 10px;
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li, ul, ol {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+  
+body {
+  background: #2A9DF4;
+}
+
+  header {
+    background: rgba($color: #FFFFFF, $alpha: .15);
+    height: 83px;
+    padding: 0 5rem;
+    box-shadow: 0px 0px 5px #33333311;
+    width: 100%;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        align-items: center;
+
+        div#logo {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            p {
+                margin-left: 2rem;
+                font-size: 25px;
+                color: #FFF;
+            }
+            img {
+                width: 50px;
+            }
+        }
+
+        button#btn-nav {
+            display: none;
+        }
+
+        ul#navbar {
+            display: flex;
+            li {
+                margin: 0 2rem;
+                a {
+                    // color: #DBDBDB;
+                    font-size: 24px;
+                    &:hover {
+                        color: #ffffff; 
+                    }
+                }
+            }
+        }
+    }
+    
+}
+// Nootebook
+@media only screen and (max-width: 1400px) {
+  header {
+      background: rgba($color: #FFFFFF, $alpha: .15);
+      height: 63px;
+      padding: 0 5rem;
+      box-shadow: 0px 0px 5px #33333311;
+      width: 100%;
+
+      nav {
+          display: flex;
+          justify-content: space-between;
+          height: 100%;
+          align-items: center;
+
+          div#logo {
+              display: flex;
+              height: 100%;
+              align-items: center;
+              p {
+                  margin-left: 2rem;
+                  font-size: 20px;
+                  color: #FFF;
+              }
+              img {
+                  width: 35px;
+              }
+          }
+
+          button#btn-nav {
+              display: none;
+          }
+
+          ul#navbar {
+              display: flex;
+              li {
+                  margin: 0 1.5rem;
+                  a {
+                      color: #DBDBDB;
+                      font-size: 20px;
+                  }
+              }
+          }
+      }
+  }
+}
+/* Celular / Tablet */
+@media only screen and (max-width: 900px) {
+
+  .mobile-hidden {
+      display: none !important;
+  }
+      header {
+          height: initial;
+          padding: 0 2rem;
+          box-shadow: 0px 0px 5px #33333311;
+          nav {
+              flex-wrap: wrap;
+              div#logo {
+                  align-items: center;
+                  margin: 1rem 0;
+                  margin-right: auto;
+                  width: 80%;
+                  p {
+                      margin-left: 2rem;
+                      font-size: 25px;
+                      color: #FFF;
+                  }
+                  img {
+                      width: 35px;
+                  }
+              }
+
+              button#btn-nav {
+                  break-after: always;
+                  display: flex;
+                  border: none;
+                  border-radius: .5rem;
+                  background-color: rgba(0, 0, 0, 0.1);
+                  svg {
+                      margin: .5rem;
+                      color: #dbdbdb;
+                  }
+              }
+
+              ul#navbar {
+                  width: 100%;
+                  flex-direction: column;
+                  align-items: center;
+                  li {
+                      margin: 2rem 2rem;
+                      a {
+                          color: #DBDBDB;
+                          font-size: 24px;
+                      }
+                  }
+              }
+          }
+          
+      }
+}

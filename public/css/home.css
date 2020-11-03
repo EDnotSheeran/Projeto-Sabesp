@@ -1,0 +1,325 @@
+body#Home {
+  background: #2A9DF4;
+}
+
+@-webkit-keyframes spin {
+  100% {
+    rotate: 360deg;
+  }
+}
+
+@keyframes spin {
+  100% {
+    rotate: 360deg;
+  }
+}
+
+body#Home main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: calc(100% - 83px);
+}
+
+body#Home main div#carrossel {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+body#Home main div#carrossel #seletor {
+  margin-top: 10px;
+}
+
+body#Home main div#carrossel #seletor button {
+  width: 15px;
+  height: 15px;
+  border: none;
+  border-radius: 50%;
+  background-color: #D4d4d4;
+  cursor: pointer;
+  margin: 0 2.5px;
+}
+
+body#Home main div#carrossel #seletor button.active {
+  background-color: #ffffff;
+}
+
+body#Home main div#carrossel div.carrossel-item {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 80%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body#Home main div#carrossel div.carrossel-item.hidden {
+  display: none;
+}
+
+body#Home main div#carrossel div.carrossel-item div.reserva {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+body#Home main div#carrossel div.carrossel-item div.reserva p {
+  margin: 1rem;
+  color: white;
+}
+
+body#Home main div#carrossel div.carrossel-item div.reserva p.fonte-extra {
+  font-size: 90px;
+}
+
+body#Home main div#carrossel div.carrossel-item div.reserva p.fonte-grande {
+  font-size: 72px;
+}
+
+body#Home main div#carrossel div.carrossel-item div.reserva p.fonte-media {
+  font-size: 32px;
+}
+
+body#Home main div#carrossel div.carrossel-item div.reserva p.fonte-pequena {
+  font-size: 24px;
+}
+
+body#Home main div#carrossel div.carrossel-item div.reserva ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+body#Home div.conteudo-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body#Home div.conteudo-wrapper #conteudo {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+body#Home div.conteudo-wrapper #conteudo div h1 {
+  font-size: 62px;
+  font-weight: 100;
+  color: white;
+  text-align: center;
+}
+
+body#Home div.conteudo-wrapper #conteudo div div {
+  margin-top: 20px;
+}
+
+body#Home div.conteudo-wrapper #conteudo div div h2 {
+  font-size: 30px;
+  font-weight: 100;
+  color: white;
+  text-align: center;
+  margin: 15px 0;
+}
+
+body#Home div.conteudo-wrapper #conteudo div div a {
+  font-size: 25px;
+  color: #E1AA12;
+}
+
+body#Home div.conteudo-wrapper #conteudo div div a:hover {
+  color: #a57c0b;
+}
+
+body#Home div.conteudo-wrapper #conteudo img {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Nootebook */
+
+@media only screen and (max-width: 1400px) {
+  [class*=btn] {
+    border-radius: 50px;
+    padding: 0.7rem 2.5rem;
+  }
+
+  body#Home {
+    background: #2A9DF4;
+  }
+
+  body#Home main {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 83px);
+  }
+
+  body#Home main div#carrossel {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  body#Home main div#carrossel div.carrossel-item {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  body#Home main div#carrossel div.carrossel-item div.reserva {
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  body#Home main div#carrossel div.carrossel-item div.reserva p {
+    margin: 1rem;
+    color: white;
+  }
+
+  body#Home main div#carrossel div.carrossel-item div.reserva p.fonte-extra {
+    font-size: 42px;
+  }
+
+  body#Home main div#carrossel div.carrossel-item div.reserva p.fonte-grande {
+    font-size: 38px;
+  }
+
+  body#Home main div#carrossel div.carrossel-item div.reserva p.fonte-media {
+    font-size: 24px;
+  }
+
+  body#Home main div#carrossel div.carrossel-item div.reserva p.fonte-pequena {
+    font-size: 18px;
+  }
+
+  body#Home main div#carrossel div.carrossel-item div.reserva ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  body#Home div.conteudo-wrapper {
+    order: -1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 40px;
+  }
+
+  body#Home div.conteudo-wrapper #conteudo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  body#Home div.conteudo-wrapper #conteudo div h1 {
+    font-size: 42px;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+  }
+
+  body#Home div.conteudo-wrapper #conteudo div div {
+    margin-top: 10px;
+  }
+
+  body#Home div.conteudo-wrapper #conteudo div div h2 {
+    font-size: 25px;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+    margin: 15px 0;
+  }
+
+  body#Home div.conteudo-wrapper #conteudo div div a {
+    font-size: 25px;
+    color: #E1AA12;
+  }
+
+  body#Home div.conteudo-wrapper #conteudo div div a:hover {
+    color: #a57c0b;
+  }
+
+  body#Home div.conteudo-wrapper #conteudo img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+/* Celular / Tablet */
+
+@media only screen and (max-width: 900px) {
+  div.conteudo-wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  div.conteudo-wrapper #conteudo {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.conteudo-wrapper #conteudo div h1 {
+    font-size: 62px;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+  }
+
+  div.conteudo-wrapper #conteudo div div {
+    margin-top: 20px;
+  }
+
+  div.conteudo-wrapper #conteudo div div h2 {
+    font-size: 30px;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+    margin: 15px 0;
+  }
+
+  div.conteudo-wrapper #conteudo div div a {
+    font-size: 25px;
+    color: #E1AA12;
+  }
+
+  div.conteudo-wrapper #conteudo div div a:hover {
+    color: #a57c0b;
+  }
+
+  div.conteudo-wrapper #conteudo img {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
