@@ -12,15 +12,6 @@ Route::view('/', 'index')->name('home');
 Route::view('report', 'report')->name('report');
 Route::view('about', 'about')->name('about');
 
-Route::get('users', 'UserController@index')->name('users.index');
-Route::get('users/create', 'UserController@create')->name('users.create');
-Route::post('users', 'UserController@store')->name('users.store');
-Route::get('users/{id}/edit', 'UserController@edit')->name('users.edit');
-Route::put('users/{id}', 'UserController@update')->name('users.update');
-Route::delete('users/{id}', 'UserController@destroy')->name('users.destroy');
-Route::get('relatar', 'RelatosController@index')->name('relatos.new');
-Route::post('relatos', 'RelatosController@create')->name('relatos.store');
-
 //#EXEMPLO DE ROTAS GET COM PARÂMETROS
 // Route::get('/name/{name}', function($name) {
 //     return 'Meu nome é ' . $name;
