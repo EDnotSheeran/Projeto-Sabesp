@@ -12,6 +12,8 @@ Route::view('/', 'index')->name('home');
 Route::view('report', 'report')->name('report');
 Route::view('about', 'about')->name('about');
 
+Route::get('report/all', 'ReportController@index')->name('report.index');
+
 //#EXEMPLO DE ROTAS GET COM PARÂMETROS
 // Route::get('/name/{name}', function($name) {
 //     return 'Meu nome é ' . $name;

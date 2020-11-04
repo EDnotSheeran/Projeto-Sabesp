@@ -13,8 +13,14 @@ class CreateModelReportsTable extends Migration
      */
     public function up()
     {
-        Schema::create('model_reports', function (Blueprint $table) {
+        Schema::create('reports', function (Blueprint $table) {
             $table->id();
+
+            $table->string('name');
+            $table->string('telefone');
+            $table->string('address');
+            $table->string('description');
+
             $table->timestamps();
         });
     }
@@ -26,6 +32,6 @@ class CreateModelReportsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('model_reports');
+        Schema::dropIfExists('reports');
     }
 }

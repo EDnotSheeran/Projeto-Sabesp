@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Report;
 
-class RelatosController extends Controller
+class ReportController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +14,8 @@ class RelatosController extends Controller
      */
     public function index()
     {
-        // return view('relatos.relatar');
+        $report = Report::All();
+        return $report;
     }
 
     /**
