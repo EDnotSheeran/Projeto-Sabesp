@@ -7,6 +7,10 @@ Sistema avisa usuário que serviço foi efetuado.
 Sistema avisa prefeitura que serviço foi efetuado. 
 Prefeitura pergunta se usuario esta satisfeito.
 
+## To Do
+
+Acrtar todas as media  querys
+
 ## Links úteis
 
 - <a href="https://laravel.com/docs/7.x">Documentação Laravel (versão 7)</a>

@@ -1,15 +1,9 @@
 body#Home {
-    background: #2A9DF4;
     
-    @keyframes spin {
-        100% {
-            rotate: 360deg;
-        }
-    }
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        height: calc(100% - 83px);
+        height: calc(100% - #{$navbar-height});
         div#carrossel {
             height: 100%;
             width: 100%;

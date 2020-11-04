@@ -1,24 +1,10 @@
 @extends('template.template')
+@extends('template.navbar')
 
 @section('body')
 <body id="Home">
-    <header>
-        <nav>
-            <div id="logo">
-                <img src="img/water-drop.png" alt="">
-                <p>Nome</p>
-            </div>
-            <button id="btn-nav" onclick="toogleHidden('#navbar')">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>  
-            </button>
-            <ul id="navbar" class="mobile-hidden">
-                <li><a id="inicio" href="/">Inicio</a></li>
-                <li><a id="sobre" href="">Sobre</a></li>
-            <li><a class="btn-orange" id="btn-relatar" href="{{ route('relatos.new') }}">Relatar</a></li>
-                {{-- <li><a class="btn-dk-blue" id="btn-login" href="">Login</a></li> --}}
-            </ul>
-        </nav>
-    </header>
+    @section('navbar')
+    @endsection
     <main>
         <div id="carrossel">
         </div>
@@ -36,11 +22,14 @@
         </div>
     </main>
     <script>
-        // Oculta e mostra os itens passados por parametro
+
+        document.querySelector('#btn-mobile').addEventListener('click',() => {
+            toogleHidden('#navbar');
+        })
+
         function toogleHidden(selector) {
             const el = document.querySelector(selector);
             el.classList.toggle('mobile-hidden');
-            return 1;
         };
 
         // Seletor de item carrosel

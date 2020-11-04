@@ -1,13 +1,14 @@
 [class*=btn] {
     border-radius: 50px;
     padding: .8rem 2.8rem;
-    position: relative;
 }
   
 [class*=btn]:active {
     top: 0.1rem;
 }
 
-.btn-orange {background: #E1AA12; color: #fff;}
-.btn-orange {background: #E1AA12; color: #2A9DF4;}
-.btn-dk-blue {background: #1167B1; color: #fff;}
+.btn-orange {
+    background: #E1AA12; 
+    color: $body-bg-color;
+    box-shadow: 5px 5px 15px #0001;
+}

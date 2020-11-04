@@ -8,7 +8,9 @@ use Illuminate\Support\Facades\Route;
 // });
 
 //#ACESSANDO PELO CONTROLLER
-Route::view('/', 'index');
+Route::view('/', 'index')->name('home');
+Route::view('report', 'report')->name('report');
+Route::view('about', 'about')->name('about');
 
 Route::get('users', 'UserController@index')->name('users.index');
 Route::get('users/create', 'UserController@create')->name('users.create');
